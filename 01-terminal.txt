@@ -1,41 +1,42 @@
 Script started on Mon Nov  2 06:26:22 2026
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mpwd[27m[27mp[27mw[27md[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % pwd
 /Users/jiyoung/dev-workstation
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mls -la[27m[27ml[27ms[27m [27m-[27ml[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % ls -la
 total 0
 drwxr-xr-x   4 jiyoung  staff   128 11  2 06:26 .
 drwxr-x---+ 36 jiyoung  staff  1152 11  2 06:26 ..
 drwxr-xr-x   3 jiyoung  staff    96 11  2 06:26 logs
 drwxr-xr-x   2 jiyoung  staff    64 11  2 06:26 practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mcd practice[27m[11D[27mc[27md[27m [27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mpwd[27m[27mp[27mw[27md[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % cd practice
+jiyoung@munjiyeong-ui-MacBookPro practice % pwd
 /Users/jiyoung/dev-workstation/practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004hScript started on Fri Nov  6 05:51:19 2026
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mscript -a[27m[9D[27ms[27mc[27mr[27mi[27mp[27mt[27m [27m-[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro practice % 
+Script started on Fri Nov  6 05:51:19 2026
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % script -a
 Script started, output file is typescript
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7msw_vers[27m[27ms[27mw[27m_[27mv[27me[27mr[27ms[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % sw_vers
 ProductName:		macOS
 ProductVersion:		15.6.1
 BuildVersion:		24G90
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mecho "$SHELL"[27m[13D[27me[27mc[27mh[27mo[27m [27m"[27m$[27mS[27mH[27mE[27mL[27mL[27m"[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % echo "$SHELL"
 /bin/zsh
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mgit --version[27m[13D[27mg[27mi[27mt[27m [27m-[27m-[27mv[27me[27mr[27ms[27mi[27mo[27mn[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % git --version
 git version 2.50.1 (Apple Git-155)
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mpwd[27m[27mp[27mw[27md[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % pwd
 /Users/jiyoung/dev-workstation
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mls -la[27m[27ml[27ms[27m [27m-[27ml[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % ls -la
 total 8
 drwxr-xr-x   5 jiyoung  staff   160 11  6 05:51 .
 drwxr-x---+ 41 jiyoung  staff  1312 11  6 05:51 ..
 drwxr-xr-x   3 jiyoung  staff    96 11  2 06:26 logs
 drwxr-xr-x   2 jiyoung  staff    64 11  2 06:26 practice
 -rw-r--r--   1 jiyoung  staff   699 11  6 05:52 typescript
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mcd practice[27m[11D[27mc[27md[27m [27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mls -la[27m[27ml[27ms[27m [27m-[27ml[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % cd practice
+jiyoung@munjiyeong-ui-MacBookPro practice % ls -la
 total 0
 drwxr-xr-x  2 jiyoung  staff   64 11  2 06:26 .
 drwxr-xr-x  5 jiyoung  staff  160 11  6 05:51 ..
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro practice % exit
 
 Saving session...
 ...copying shared history...
@@ -44,31 +45,29 @@ Saving session...
 Deleting expired sessions...none found.
 
 Script done, output file is typescript
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mtouch memo.txt[27m[14D[27mt[27mo[27mu[27mc[27mh[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mls -l memo.txt[27m[14D[27ml[27ms[27m [27m-[27ml[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % touch memo.txt
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % ls -l memo.txt
 -rw-r--r--  1 jiyoung  staff  0 11  6 05:55 memo.txt
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mecho "My first terminal pract[7mi[7mce" > memo.txt[27m[K[A[36C[27me[27mc[27mh[27mo[27m [27m"[27mM[27my[27m [27mf[27mi[27mr[27ms[27mt[27m [27mt[27me[27mr[27mm[27mi[27mn[27ma[27ml[27m [27mp[27mr[27ma[27mc[27mti[27mc[27me[27m"[27m [27m>[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mcat memo.txt[27m[12D[27mc[27ma[27mt[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % echo "My first terminal practice" > memo.txt
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % cat memo.txt
 My first terminal practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mcp memo.txt memo-copy.txt[27m[25D[27mc[27mp[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[27m [27mm[27me[27mm[27mo[27m-[27mc[27mo[27mp[27my[27m.[27mt[27mx[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mmv memo-copy.txt memo-renamed[7m.[7mtxt[27m[K
-[K[A[A[51C[27mm[27mv[27m [27mm[27me[27mm[27mo[27m-[27mc[27mo[27mp[27my[27m.[27mt[27mx[27mt[27m [27mm[27me[27mm[27mo[27m-[27mr[27me[27mn[27ma[27mm[27me[27md.[27mt[27mx[27mt[1B[K[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mls -l[27m[27ml[27ms[27m [27m-[27ml[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % cp memo.txt memo-copy.txt
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % mv memo-copy.txt memo-renamed.txt
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % ls -l
 total 24
 drwxr-xr-x  3 jiyoung  staff    96 11  2 06:26 logs
 -rw-r--r--  1 jiyoung  staff    27 11  6 05:55 memo-renamed.txt
 -rw-r--r--  1 jiyoung  staff    27 11  6 05:55 memo.txt
 drwxr-xr-x  2 jiyoung  staff    64 11  2 06:26 practice
 -rw-r--r--  1 jiyoung  staff  3472 11  6 05:54 typescript
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mmkdir archive[27m[13D[27mm[27mk[27md[27mi[27mr[27m [27ma[27mr[27mc[27mh[27mi[27mv[27me[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mmv memo-renamed.txt archive/[27m
-[K[A[51C[27mm[27mv[27m [27mm[27me[27mm[27mo[27m-[27mr[27me[27mn[27ma[27mm[27me[27md[27m.[27mt[27mx[27mt[27m [27ma[27mr[27mc[27mh[27mi[27mv[27me[27m/[1B[K[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mls -l archive[27m[13D[27ml[27ms[27m [27m-[27ml[27m [27ma[27mr[27mc[27mh[27mi[27mv[27me[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % mkdir archive
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % mv memo-renamed.txt archive/
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % ls -l archive
 total 8
 -rw-r--r--  1 jiyoung  staff  27 11  6 05:55 memo-renamed.txt
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mrm archive/memo-renamed.txt[27m[27D[27mr[27mm[27m [27ma[27mr[27mc[27mh[27mi[27mv[27me[27m/[27mm[27me[27mm[27mo[27m-[27mr[27me[27mn[27ma[27mm[27me[27md[27m.[27mt[27mx[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mrmdir archive[27m[13D[27mr[27mm[27md[27mi[27mr[27m [27ma[27mr[27mc[27mh[27mi[27mv[27me[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mls -la[27m[27ml[27ms[27m [27m-[27ml[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % rm archive/memo-renamed.txt
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % rmdir archive
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % ls -la
 total 16
 drwxr-xr-x   6 jiyoung  staff   192 11  6 05:56 .
 drwxr-x---+ 41 jiyoung  staff  1312 11  6 05:54 ..
@@ -76,20 +75,20 @@ drwxr-xr-x   3 jiyoung  staff    96 11  2 06:26 logs
 -rw-r--r--   1 jiyoung  staff    27 11  6 05:55 memo.txt
 drwxr-xr-x   2 jiyoung  staff    64 11  2 06:26 practice
 -rw-r--r--   1 jiyoung  staff  3472 11  6 05:54 typescript
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mmv memo.txt practice/[27m[21D[27mm[27mv[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[27m [27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[27m/[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mcd practice[27m[11D[27mc[27md[27m [27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mls -l memo.txt[27m[14D[27ml[27ms[27m [27m-[27ml[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % mv memo.txt practice/
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % cd practice
+jiyoung@munjiyeong-ui-MacBookPro practice % ls -l memo.txt
 -rw-r--r--  1 jiyoung  staff  27 11  6 05:55 memo.txt
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mchmod 600 memo.txt[27m[18D[27mc[27mh[27mm[27mo[27md[27m [27m6[27m0[27m0[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mls -l memo.txt[27m[14D[27ml[27ms[27m [27m-[27ml[27m [27mm[27me[27mm[27mo[27m.[27mt[27mx[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro practice % chmod 600 memo.txt
+jiyoung@munjiyeong-ui-MacBookPro practice % ls -l memo.txt
 -rw-------  1 jiyoung  staff  27 11  6 05:55 memo.txt
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mmkdir permission-test[27m[21D[27mm[27mk[27md[27mi[27mr[27m [27mp[27me[27mr[27mm[27mi[27ms[27ms[27mi[27mo[27mn[27m-[27mt[27me[27ms[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mls -ld permission-test[27m[22D[27ml[27ms[27m [27m-[27ml[27md[27m [27mp[27me[27mr[27mm[27mi[27ms[27ms[27mi[27mo[27mn[27m-[27mt[27me[27ms[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro practice % mkdir permission-test
+jiyoung@munjiyeong-ui-MacBookPro practice % ls -ld permission-test
 drwxr-xr-x  2 jiyoung  staff  64 11  6 05:58 permission-test
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mchmod 700 permission-test[27m[25D[27mc[27mh[27mm[27mo[27md[27m [27m7[27m0[27m0[27m [27mp[27me[27mr[27mm[27mi[27ms[27ms[27mi[27mo[27mn[27m-[27mt[27me[27ms[27mt[?2004l
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mls -ld permission-test[27m[22D[27ml[27ms[27m [27m-[27ml[27md[27m [27mp[27me[27mr[27mm[27mi[27ms[27ms[27mi[27mo[27mn[27m-[27mt[27me[27ms[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro practice % chmod 700 permission-test
+jiyoung@munjiyeong-ui-MacBookPro practice % ls -ld permission-test
 drwx------  2 jiyoung  staff  64 11  6 05:58 permission-test
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation/practice[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro practice % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro practice % exit
 
 Saving session...
 ...saving history...truncating history files...
