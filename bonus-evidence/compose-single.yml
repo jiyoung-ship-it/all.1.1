@@ -1,0 +1,5 @@
+services:
+  web:
+    image: workstation-web:1.0
+    ports:
+      - "127.0.0.1:8082:80"

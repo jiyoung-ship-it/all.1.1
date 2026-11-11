@@ -1,0 +1,16 @@
+
+$ ssh -T git@github.com
+Hi jiyoung-ship-it! You've successfully authenticated, but GitHub does not provide shell access.
+
+$ git remote -v
+origin	git@github.com:jiyoung-ship-it/All.git (fetch)
+origin	git@github.com:jiyoung-ship-it/All.git (push)
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+$ git push origin main
+Everything up-to-date

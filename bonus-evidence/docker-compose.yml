@@ -1,0 +1,13 @@
+services:
+  web:
+    image: workstation-web:1.0
+    ports:
+      - "127.0.0.1:8086:8085"
+    environment:
+      NGINX_PORT: "8085"
+    volumes:
+      - ./default.conf.template:/etc/nginx/templates/default.conf.template:ro
+
+  helper:
+    image: alpine:3.20
+    command: ["sleep", "infinity"]

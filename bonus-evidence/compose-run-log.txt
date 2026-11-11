@@ -1,0 +1,79 @@
+
+$ docker compose up -d
+ Network dev-workstation_default Creating 
+ Network dev-workstation_default Creating 
+ Network dev-workstation_default Created 
+ Network dev-workstation_default Created 
+ Container dev-workstation-web-1 Creating 
+ Container dev-workstation-helper-1 Creating 
+ Container dev-workstation-web-1 Created 
+ Container dev-workstation-helper-1 Created 
+ Container dev-workstation-web-1 Starting 
+ Container dev-workstation-helper-1 Starting 
+ Container dev-workstation-web-1 Started 
+ Container dev-workstation-helper-1 Started 
+
+$ docker compose ps
+NAME                       IMAGE                 COMMAND                   SERVICE   CREATED                  STATUS                  PORTS
+dev-workstation-helper-1   alpine:3.20           "sleep infinity"          helper    Less than a second ago   Up Less than a second   
+dev-workstation-web-1      workstation-web:1.0   "/docker-entrypoint.…"   web       1 second ago             Up Less than a second   127.0.0.1:8086->8085/tcp
+
+$ curl http://localhost:8086
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나의 개발 워크스테이션</title>
+</head>
+<body>
+  <h1>나의 첫 Docker 웹 서버</h1>
+  <p>NGINX 커스텀 이미지로 실행한 페이지입니다.</p>
+  <p>페이지 버전: 1</p>
+</body>
+</html>
+
+$ docker compose exec -T helper wget -qO- http://web
+wget: can't connect to remote host (172.18.0.2): Connection refused
+
+$ docker compose exec -T web printenv NGINX_PORT
+8085
+
+$ docker compose exec -T web grep listen /etc/nginx/conf.d/default.conf
+    listen 8085;
+
+$ docker compose logs --tail=20 web
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker processes
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 36
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 37
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 38
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 39
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 40
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 41
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 42
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 43
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 44
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 45
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 46
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 47
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 48
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 49
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 50
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 51
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 52
+web-1  | 2026/11/11 18:54:22 [notice] 1#1: start worker process 53
+web-1  | 172.18.0.1 - - [11/Nov/2026:18:54:22 +0000] "GET / HTTP/1.1" 200 283 "-" "curl/8.7.1" "-"
+
+$ docker compose down
+ Container dev-workstation-web-1 Stopping 
+ Container dev-workstation-helper-1 Stopping 
+ Container dev-workstation-web-1 Stopped 
+ Container dev-workstation-web-1 Removing 
+ Container dev-workstation-web-1 Removed 
+ Container dev-workstation-helper-1 Stopped 
+ Container dev-workstation-helper-1 Removing 
+ Container dev-workstation-helper-1 Removed 
+ Network dev-workstation_default Removing 
+ Network dev-workstation_default Removed 
+
+$ docker compose ps
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS

@@ -1,0 +1,30 @@
+name: dev-workstation
+services:
+  helper:
+    command:
+      - sleep
+      - infinity
+    image: alpine:3.20
+    networks:
+      default: null
+  web:
+    environment:
+      NGINX_PORT: "8085"
+    image: workstation-web:1.0
+    networks:
+      default: null
+    volumes:
+      - type: bind
+        source: /Users/jiyoung/dev-workstation/default.conf.template
+        target: /etc/nginx/templates/default.conf.template
+        read_only: true
+        bind: {}
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8085
+        published: "8086"
+        protocol: tcp
+networks:
+  default:
+    name: dev-workstation_default

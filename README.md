@@ -543,3 +543,97 @@ Unable to find application named 'Visual Studio Code'
 - 결과: 저장소 폴더가 열리고 GitHub 로그인까지 완료했다.
 - 증거: [실패 및 재실행 로그](05-git.txt), [로그인 캡처](vscode-github.png)
 
+
+---
+
+## 보너스 과제 — Docker Compose 및 GitHub SSH
+
+### 1. Docker Compose 기초
+
+기존에 제작한 NGINX 커스텀 이미지 `workstation-web:1.0`을 활용하여 단일 웹 서비스를 실행하였다.
+
+`compose-single.yml`에 서비스 이름, 이미지, 포트 매핑을 정의하였다.
+
+- 실행 명령: `docker compose up -d`
+- 상태 확인: `docker compose ps`
+- 접속 확인: `curl http://localhost:8082`
+- 종료 명령: `docker compose down`
+
+실행 결과 NGINX 웹 서버가 정상적으로 시작되었으며, HTML 응답을 확인하였다.
+
+Docker Compose를 활용하면 긴 컨테이너 실행 명령을 설정 파일로 관리하고 동일한 환경을 재현할 수 있다.
+
+증거: `bonus-evidence/compose-single.yml`, `bonus-evidence/compose-single-log.txt`
+
+### 2. Docker Compose 멀티 컨테이너
+
+기존 NGINX 웹 서버인 `web`과 Alpine Linux 기반 보조 서비스인 `helper`를 함께 실행하였다.
+
+`helper` 컨테이너에서 `wget` 명령어로 `web` 서비스에 접속하여 HTML 응답을 확인하였다.
+
+- 웹 서버: `workstation-web:1.0`
+- 보조 서비스: `alpine:3.20`
+- 통신 확인: `docker compose exec helper wget -qO- http://web`
+
+두 컨테이너가 같은 Compose 네트워크에서 서비스 이름을 이용하여 통신할 수 있음을 확인하였다.
+
+환경 변수 실습 이후에는 NGINX의 내부 포트가 8085로 변경되어 기존 80번 포트 접속이 실패하였다. 이후 `http://web:8085`로 접속하여 통신 성공을 재확인하였다.
+
+증거: `bonus-evidence/docker-compose-before-env.yml`, `bonus-evidence/compose-network-retest.txt`
+
+### 3. Docker Compose 운영 명령어
+
+다음 명령어를 활용하여 컨테이너를 관리하였다.
+
+- `docker compose up -d`: 서비스 실행
+- `docker compose ps`: 실행 상태 확인
+- `docker compose logs --tail=20 web`: 웹 서버 로그 확인
+- `docker compose down`: 서비스 종료 및 제거
+
+NGINX의 실행 기록과 HTTP 요청에 대한 200 응답을 확인하였다.
+
+이를 통해 Compose를 활용한 실행, 상태 확인, 로그 확인, 종료 절차를 학습하였다.
+
+증거: `bonus-evidence/compose-run-log.txt`
+
+### 4. 환경 변수 활용
+
+NGINX 서버의 포트를 환경 변수로 설정하는 실습을 수행하였다.
+
+`default.conf.template` 파일에 `${NGINX_PORT}`를 사용하고, Compose 설정에서 `NGINX_PORT=8085`를 지정하였다.
+
+- 컨테이너 내부 포트: 8085
+- 호스트 접속 포트: 8086
+- 접속 확인: `curl http://localhost:8086`
+- 환경 변수 확인: `docker compose exec web printenv NGINX_PORT`
+- NGINX 설정 확인: `docker compose exec web grep listen /etc/nginx/conf.d/default.conf`
+
+실행 결과 환경 변수 값 `8085`와 NGINX 설정의 `listen 8085;`를 확인하였다. 웹페이지 접속도 정상적으로 성공하였다.
+
+이를 통해 프로그램의 설정을 코드와 분리하여 관리하는 방법을 학습하였다.
+
+증거: `bonus-evidence/docker-compose.yml`, `bonus-evidence/default.conf.template`, `bonus-evidence/compose-config.txt`, `bonus-evidence/compose-run-log.txt`
+
+### 5. GitHub SSH 키 설정
+
+ED25519 방식의 SSH 키를 생성하고 공개키를 GitHub에 등록하였다.
+
+이후 `ssh -T git@github.com` 명령어를 실행하여 SSH 인증 성공 메시지를 확인하였다.
+
+기존 HTTPS 저장소 주소를 다음 SSH 주소로 변경하였다.
+
+`git@github.com:jiyoung-ship-it/All.git`
+
+`git remote -v`로 연결 주소를 확인하고, `git push origin main`을 실행하였다.
+
+최종적으로 `Everything up-to-date` 메시지가 출력되어 SSH 방식으로 GitHub에 연결하고 푸시 명령을 정상 처리할 수 있음을 확인하였다. 새로운 커밋이 없어 실제 업로드된 변경 사항은 없었다.
+
+SSH 개인키는 GitHub에 업로드하거나 기술 문서에 포함하지 않았다.
+
+증거: `bonus-evidence/ssh-github-log.txt`
+
+### 보너스 과제 결과
+
+Docker Compose를 사용하여 단일 서비스와 멀티 컨테이너를 실행하고, 서비스 간 통신과 운영 명령어를 확인하였다. 환경 변수를 이용한 서버 설정 변경을 실습하였으며, GitHub SSH 인증과 저장소 연결도 완료하였다.
+
+관련 설정 파일과 실행 결과는 `bonus-evidence` 폴더에 보관하였다.
