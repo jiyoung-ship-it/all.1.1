@@ -1,7 +1,7 @@
 Script started on Fri Nov  6 06:10:26 2026
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker --version[27m[16D[27md[27mo[27mc[27mk[27me[27mr[27m [27m-[27m-[27mv[27me[27mr[27ms[27mi[27mo[27mn[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker --version
 Docker version 29.8.2, build 7fc2dff
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker info[27m[11D[27md[27mo[27mc[27mk[27me[27mr[27m [27mi[27mn[27mf[27mo[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker info
 Client:
  Version:    29.8.2
  Context:    orbstack
@@ -100,12 +100,12 @@ Server:
   UserlandProxyPath: /opt/orbstack-guest/pstub
 
 WARNING: DOCKER_INSECURE_NO_IPTABLES_RAW is set
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker run --name hello-test [7mh[7mello-world[27m[K[A[40C[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mh[27me[27ml[27ml[27mo[27m-[27mt[27me[27ms[27mt[27m h[27me[27ml[27ml[27mo[27m-[27mw[27mo[27mr[27ml[27md[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker run --name hello-test hello-world
 Unable to find image 'hello-world:latest' locally
 latest: Pulling from library/hello-world
 
-[1A[2K58dee6a49ef1: Pulling fs layer [1B[1A[2K58dee6a49ef1: Download complete [1B[1A[2K58dee6a49ef1: Extracting 1 s[1B[1A[2K58dee6a49ef1: Pull complete [1B
-[1A[2Kc3bdf82c34d1: Download complete [1BDigest: sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef
+58dee6a49ef1: Pulling fs layer 58dee6a49ef1: Download complete 58dee6a49ef1: Extracting 1 s58dee6a49ef1: Pull complete
+c3bdf82c34d1: Download complete Digest: sha256:c567b231f65614688711a75f31518a064258a51d442117a3e771a3a8fdba78ef
 Status: Downloaded newer image for hello-world:latest
 
 Hello from Docker!
@@ -129,23 +129,23 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker ps -a[27m[12D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[27m [27m-[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker ps -a
 CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                     PORTS     NAMES
 33c5dab0d95f   hello-world   "/hello"   5 seconds ago   Exited (0) 5 seconds ago             hello-test
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker run -it --name ubuntu-[7mp[7mractice ubuntu:24.04 bash[27m[K[A[25C[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m-p[27mr[27ma[27mc[27mt[27mi[27mc[27me[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m:[27m2[27m4[27m.[27m0[27m4[27m [27mb[27ma[27ms[27mh[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker run -it --name ubuntu-practice ubuntu:24.04 bash
 Unable to find image 'ubuntu:24.04' locally
 24.04: Pulling from library/ubuntu
 
-[1A[2Ke2d2bb84d022: Pulling fs layer [1B[1A[2Ke2d2bb84d022: Downloading  1.049MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  2.097MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  3.146MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  4.194MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  4.194MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  5.243MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  6.291MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  6.291MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading   7.34MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  8.389MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  9.437MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  10.49MB/28.94MB[1B[1A[2Ke2d2bb84d022: Downloading  11.53MB/28.94MB[1B
-[1A[2K2238dc1b4376: Downloading  1.049MB/1.939MB[1B[2A[2Ke2d2bb84d022: Downloading  12.58MB/28.94MB[2B[1A[2K2238dc1b4376: Downloading  1.049MB/1.939MB[1B[2A[2Ke2d2bb84d022: Downloading  13.63MB/28.94MB[2B[1A[2K2238dc1b4376: Downloading  1.049MB/1.939MB[1B[2A[2Ke2d2bb84d022: Downloading  14.68MB/28.94MB[2B[1A[2K2238dc1b4376: Downloading  1.049MB/1.939MB[1B[2A[2Ke2d2bb84d022: Downloading  15.73MB/28.94MB[2B[1A[2K2238dc1b4376: Downloading  1.049MB/1.939MB[1B[2A[2Ke2d2bb84d022: Downloading  16.78MB/28.94MB[2B[1A[2K2238dc1b4376: Downloading  1.049MB/1.939MB[1B[2A[2Ke2d2bb84d022: Downloading  17.83MB/28.94MB[2B[1A[2K2238dc1b4376: Download complete [1B[2A[2Ke2d2bb84d022: Downloading  18.87MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  19.92MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  19.92MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  20.97MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  22.02MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  23.07MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  24.12MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  25.17MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  26.21MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  27.26MB/28.94MB[2B[2A[2Ke2d2bb84d022: Downloading  28.94MB/28.94MB[2B[2A[2Ke2d2bb84d022: Download complete [2B[2A[2Ke2d2bb84d022: Extracting 1 s[2B[2A[2Ke2d2bb84d022: Extracting 1 s[2B[2A[2Ke2d2bb84d022: Extracting 1 s[2B[2A[2Ke2d2bb84d022: Extracting 1 s[2B[2A[2Ke2d2bb84d022: Extracting 1 s[2B[2A[2Ke2d2bb84d022: Extracting 1 s[2B[2A[2Ke2d2bb84d022: Pull complete [2BDigest: sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852
+e2d2bb84d022: Pulling fs layer e2d2bb84d022: Downloading  1.049MB/28.94MBe2d2bb84d022: Downloading  2.097MB/28.94MBe2d2bb84d022: Downloading  3.146MB/28.94MBe2d2bb84d022: Downloading  4.194MB/28.94MBe2d2bb84d022: Downloading  4.194MB/28.94MBe2d2bb84d022: Downloading  5.243MB/28.94MBe2d2bb84d022: Downloading  6.291MB/28.94MBe2d2bb84d022: Downloading  6.291MB/28.94MBe2d2bb84d022: Downloading   7.34MB/28.94MBe2d2bb84d022: Downloading  8.389MB/28.94MBe2d2bb84d022: Downloading  9.437MB/28.94MBe2d2bb84d022: Downloading  10.49MB/28.94MBe2d2bb84d022: Downloading  11.53MB/28.94MB
+2238dc1b4376: Downloading  1.049MB/1.939MBe2d2bb84d022: Downloading  12.58MB/28.94MB2238dc1b4376: Downloading  1.049MB/1.939MBe2d2bb84d022: Downloading  13.63MB/28.94MB2238dc1b4376: Downloading  1.049MB/1.939MBe2d2bb84d022: Downloading  14.68MB/28.94MB2238dc1b4376: Downloading  1.049MB/1.939MBe2d2bb84d022: Downloading  15.73MB/28.94MB2238dc1b4376: Downloading  1.049MB/1.939MBe2d2bb84d022: Downloading  16.78MB/28.94MB2238dc1b4376: Downloading  1.049MB/1.939MBe2d2bb84d022: Downloading  17.83MB/28.94MB2238dc1b4376: Download complete e2d2bb84d022: Downloading  18.87MB/28.94MBe2d2bb84d022: Downloading  19.92MB/28.94MBe2d2bb84d022: Downloading  19.92MB/28.94MBe2d2bb84d022: Downloading  20.97MB/28.94MBe2d2bb84d022: Downloading  22.02MB/28.94MBe2d2bb84d022: Downloading  23.07MB/28.94MBe2d2bb84d022: Downloading  24.12MB/28.94MBe2d2bb84d022: Downloading  25.17MB/28.94MBe2d2bb84d022: Downloading  26.21MB/28.94MBe2d2bb84d022: Downloading  27.26MB/28.94MBe2d2bb84d022: Downloading  28.94MB/28.94MBe2d2bb84d022: Download complete e2d2bb84d022: Extracting 1 se2d2bb84d022: Extracting 1 se2d2bb84d022: Extracting 1 se2d2bb84d022: Extracting 1 se2d2bb84d022: Extracting 1 se2d2bb84d022: Extracting 1 se2d2bb84d022: Pull complete Digest: sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852
 Status: Downloaded newer image for ubuntu:24.04
-[?2004h]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# [7mls[27mls
-[?2004l[0m[01;36mbin[0m   [01;34mdev[0m  [01;34mhome[0m  [01;34mmedia[0m  [01;34mopt[0m   [01;34mroot[0m  [01;36msbin[0m  [01;34msys[0m  [01;34musr[0m
-[01;34mboot[0m  [01;34metc[0m  [01;36mlib[0m   [01;34mmnt[0m    [01;34mproc[0m  [01;34mrun[0m   [01;34msrv[0m   [30;42mtmp[0m  [01;34mvar[0m
-[?2004h]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# [7mecho "Inside Ubuntu container"[27mecho "Inside Ubuntu container"
-[?2004lInside Ubuntu container
-[?2004h]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# [K[7mcat /etc/os-release[27mcat /etc/os-release
-[?2004lPRETTY_NAME="Ubuntu 24.04.5 LTS"
+root@2283c6cb75f2:/# ls
+bin   dev  home  media  opt   root  sbin  sys  usr
+boot  etc  lib   mnt    proc  run   srv   tmp  var
+root@2283c6cb75f2:/# echo "Inside Ubuntu container"
+Inside Ubuntu container
+root@2283c6cb75f2:/# cat /etc/os-release
+PRETTY_NAME="Ubuntu 24.04.5 LTS"
 NAME="Ubuntu"
 VERSION_ID="24.04"
 VERSION="24.04.5 LTS (Noble Numbat)"
@@ -158,36 +158,36 @@ BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 UBUNTU_CODENAME=noble
 LOGO=ubuntu-logo
-[?2004h]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# [7mexit[27mexit
-[?2004lexit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker ps -a[27m[12D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[27m [27m-[27ma[?2004l
+root@2283c6cb75f2:/# exit
+exit
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker ps -a
 CONTAINER ID   IMAGE          COMMAND    CREATED              STATUS                      PORTS     NAMES
 2283c6cb75f2   ubuntu:24.04   "bash"     About a minute ago   Exited (0) 18 seconds ago             ubuntu-practice
 33c5dab0d95f   hello-world    "/hello"   3 minutes ago        Exited (0) 3 minutes ago              hello-test
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker start ubuntu-practice[27m[28D[27md[27mo[27mc[27mk[27me[27mr[27m [27ms[27mt[27ma[27mr[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m-[27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker start ubuntu-practice
 ubuntu-practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker ps
 CONTAINER ID   IMAGE          COMMAND   CREATED         STATUS         PORTS     NAMES
 2283c6cb75f2   ubuntu:24.04   "bash"    2 minutes ago   Up 5 seconds             ubuntu-practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker exec -it ubuntu-practi[7mc[7me bash[27m[K[A[44C[27md[27mo[27mc[27mk[27me[27mr[27m [27me[27mx[27me[27mc[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m-[27mp[27mr[27ma[27mc[27mt[27mic[27me[27m [27mb[27ma[27ms[27mh[?2004l
-[?2004h]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# [7mexit[27mexit
-[?2004lexit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker ps[27m[9D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker exec -it ubuntu-practice bash
+root@2283c6cb75f2:/# exit
+exit
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker ps
 CONTAINER ID   IMAGE          COMMAND   CREATED         STATUS          PORTS     NAMES
 2283c6cb75f2   ubuntu:24.04   "bash"    2 minutes ago   Up 25 seconds             ubuntu-practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker attach ubuntu-practice[27m [K[A[51C[27md[27mo[27mc[27mk[27me[27mr[27m [27ma[27mt[27mt[27ma[27mc[27mh[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m-[27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me [K[?2004l
-[K]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# [K]0;root@2283c6cb75f2: /root@2283c6cb75f2:/# exit
-[?2004lexit
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker ps -a[27m[12D[27md[27mo[27mc[27mk[27me[27mr[27m [27mp[27ms[27m [27m-[27ma[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker attach ubuntu-practice
+root@2283c6cb75f2:/# root@2283c6cb75f2:/# exit
+exit
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker ps -a
 CONTAINER ID   IMAGE          COMMAND    CREATED         STATUS                     PORTS     NAMES
 2283c6cb75f2   ubuntu:24.04   "bash"     3 minutes ago   Exited (0) 5 seconds ago             ubuntu-practice
 33c5dab0d95f   hello-world    "/hello"   5 minutes ago   Exited (0) 5 minutes ago             hello-test
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker images[27m[13D[27md[27mo[27mc[27mk[27me[27mr[27m [27mi[27mm[27ma[27mg[27me[27ms[?2004l
-                                                           [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
-[39m[1mIMAGE[0m                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
-[34m[1mhello-world:latest[0m   [39mc567b231f656[0m       [39m18.5kB[0m         [39m10.3kB[0m   [38;5;0m[48;5;14m U [0m  
-[34m[1mubuntu:24.04[0m         [39mfe81560990fa[0m        [39m139MB[0m         [39m30.9MB[0m   [38;5;0m[48;5;14m U [0m  
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker logs hello-test[27m[22D[27md[27mo[27mc[27mk[27me[27mr[27m [27ml[27mo[27mg[27ms[27m [27mh[27me[27ml[27ml[27mo[27m-[27mt[27me[27ms[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker images
+                                                           i Info →   U  In Use
+IMAGE                ID             DISK USAGE   CONTENT SIZE   EXTRA
+hello-world:latest   c567b231f656       18.5kB         10.3kB    U
+ubuntu:24.04         fe81560990fa        139MB         30.9MB    U
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker logs hello-test
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -210,19 +210,19 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker start ubuntu-practice[27m[28D[27md[27mo[27mc[27mk[27me[27mr[27m [27ms[27mt[27ma[27mr[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m-[27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker start ubuntu-practice
 \ubuntu-practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h\ [7mdocker stats --no-stream ubun[7mt[7mu-practice[27m[K[A[40C[27md[27mo[27mc[27mk[27me[27mr[27m [27ms[27mt[27ma[27mt[27ms[27m [27m-[27m-[27mn[27mo[27m-[27ms[27mt[27mr[27me[27ma[27mm[27m [27mu[27mb[27mu[27mnt[27mu[27m-[27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker stats --no-stream ubuntu-practice
 CONTAINER ID   NAME              CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O    PIDS
 2283c6cb75f2   ubuntu-practice   0.00%     1.441MiB / 7.816GiB   0.02%     1.13kB / 126B   3.6MB / 0B   1
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h[7mdocker stop ubuntu-practice[27m[27D[27md[27mo[27mc[27mk[27me[27mr[27m [27ms[27mt[27mo[27mp[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m-[27mp[27mr[27ma[27mc[27mt[27mi[27mc[27me[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker stop ubuntu-practice
 docker ps -a
 ubuntu-practice
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004hddocker ps -a[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % docker ps -a
 CONTAINER ID   IMAGE          COMMAND    CREATED         STATUS                                PORTS     NAMES
 2283c6cb75f2   ubuntu:24.04   "bash"     4 minutes ago   Exited (137) Less than a second ago             ubuntu-practice
 33c5dab0d95f   hello-world    "/hello"   6 minutes ago   Exited (0) 6 minutes ago                        hello-test
-[1m[7m%[27m[1m[0m                                                                                ]7;file://munjiyeong-ui-MacBookPro.local/Users/jiyoung/dev-workstation[0m[27m[24m[Jjiyoung@munjiyeong-ui-MacBookPro dev-workstation % [K[?2004h# [7mexit[27m[27me[27mx[27mi[27mt[?2004l
+jiyoung@munjiyeong-ui-MacBookPro dev-workstation % exit
 
 Saving session...
 ...copying shared history...
